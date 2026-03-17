@@ -1,0 +1,8 @@
+.notif { display:flex; align-items:center; gap:12px; padding:14px 16px; border-radius:10px; transition:background 0.2s; }
+.notif:hover { background:var(--surface2); }
+.unread { background:rgba(124,106,247,0.08); border-left:3px solid var(--accent); }
+.avatar { width:40px; height:40px; border-radius:50%; }
+.body { flex:1; font-size:0.875rem; }
+.body p { line-height:1.4; }
+.time { color:var(--text2); font-size:0.78rem; margin-top:3px; display:block; }
+.icon { font-size:1.1rem; }
