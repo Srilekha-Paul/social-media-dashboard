@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES (THEME COLORS) */
+:root {
+  --bg-color: #0f172a;
+  --card-color: #1e293b;
+  --text-color: #e2e8f0;
+  --accent-color: #38bdf8;
+  --secondary-text: #94a3b8;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* CARD UI */
+.card {
+  background: var(--card-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* BUTTON */
+button {
+  background: var(--accent-color);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 8px 0;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+/* FLEX UTILITIES */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* DASHBOARD GRID */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* SMALL TEXT */
+.small-text {
+  color: var(--secondary-text);
+  font-size: 14px;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
