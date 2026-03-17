@@ -1,0 +1,20 @@
+.title { font-family:var(--font-head); font-size:1.6rem; font-weight:800; margin-bottom:20px; }
+.layout { display:flex; gap:16px; align-items:flex-start; flex-wrap:wrap; }
+.contact { display:flex; align-items:center; gap:10px; padding:10px 12px; border-radius:10px; width:100%; text-align:left; transition:background 0.2s; }
+.contact:hover { background:var(--surface2); }
+.activeContact { background:var(--surface2) !important; }
+.avatar { width:38px; height:38px; border-radius:50%; }
+.contactInfo { flex:1; overflow:hidden; }
+.contactName { font-size:0.875rem; font-weight:600; }
+.lastMsg { font-size:0.78rem; color:var(--text2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.unread { background:var(--accent); color:#fff; font-size:0.72rem; border-radius:10px; padding:2px 7px; font-weight:600; }
+.chatWith { font-family:var(--font-head); font-weight:700; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid var(--border); }
+.messages { flex:1; display:flex; flex-direction:column; gap:10px; margin-bottom:16px; min-height:200px; }
+.bubble { padding:10px 14px; border-radius:12px; max-width:70%; font-size:0.875rem; line-height:1.5; }
+.mine { background:var(--accent); color:#fff; align-self:flex-end; border-bottom-right-radius:3px; }
+.theirs { background:var(--surface2); align-self:flex-start; border-bottom-left-radius:3px; }
+.inputRow { display:flex; gap:8px; }
+.input { flex:1; padding:10px 14px; background:var(--surface2); border:1px solid var(--border); border-radius:8px; color:var(--text); font-family:var(--font-body); font-size:0.875rem; outline:none; }
+.input:focus { border-color:var(--accent); }
+.sendBtn { padding:10px 18px; background:var(--accent); color:#fff; border-radius:8px; font-weight:500; transition:filter 0.2s; }
+.sendBtn:hover { filter:brightness(1.1); }
